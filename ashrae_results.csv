@@ -1,0 +1,233 @@
+question,messages,final_query,query_result,query_success,iterations,ts_string,func_called,prompt_tokens,total_tokens,completion_tokens,cost,data_success,runs,duration,label
+How frequently do the VAV dampers reach their fully open or fully closed positions?,[],"SELECT ?vav ?damper_pos ?ts WHERE {
+    ?vav rdf:type brick:VAV .
+    ?damper_pos brick:isPointOf ?vav .
+    ?damper_pos rdf:type brick:Damper_Position_Sensor .
+    ?damper_pos ref:TimeseriesReference ?ts .
+}","    vav                  damper_pos                          ts
+1A-VAV1 1A-VAV1-VAVActuatorPosition 1A-VAV1-VAVActuatorPosition
+1A-VAV2 1A-VAV2-VAVActuatorPosition 1A-VAV2-VAVActuatorPosition
+1A-VAV3 1A-VAV3-VAVActuatorPosition 1A-VAV3-VAVActuatorPosition
+1B-VAV1 1B-VAV1-VAVActuatorPosition 1B-VAV1-VAVActuatorPosition
+1B-VAV2 1B-VAV2-VAVActuatorPosition 1B-VAV2-VAVActuatorPosition",True,0,"           datetime  1A-VAV1-VAVActuatorPosition     vav  1A-VAV2-VAVActuatorPosition  1A-VAV3-VAVActuatorPosition  1B-VAV1-VAVActuatorPosition  1B-VAV2-VAVActuatorPosition  1B-VAV3-VAVActuatorPosition
+2021-08-14 23:45:00                        33.98 1A-VAV1                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:00:00                        33.98 1A-VAV1                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:15:00                        33.98 1A-VAV1                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:30:00                        33.98 1A-VAV1                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:45:00                        33.98 1A-VAV1                          NaN                          NaN                          NaN                          NaN                          NaN",,2910,4010,1100,0.03105,True,0,0.2626094659169515,correct
+How frequently do the VAV dampers reach their fully open or fully closed positions?,[],"SELECT ?vav ?damper ?ts WHERE {
+    ?vav rdf:type brick:VAV .
+    ?damper brick:isPointOf ?vav  .
+    ?damper ref:TimeseriesReference ?ts.
+    ?damper rdf:type brick:Damper_Position_Sensor.
+}","    vav                      damper                          ts
+1A-VAV1 1A-VAV1-VAVActuatorPosition 1A-VAV1-VAVActuatorPosition
+1A-VAV2 1A-VAV2-VAVActuatorPosition 1A-VAV2-VAVActuatorPosition
+1A-VAV3 1A-VAV3-VAVActuatorPosition 1A-VAV3-VAVActuatorPosition
+1B-VAV1 1B-VAV1-VAVActuatorPosition 1B-VAV1-VAVActuatorPosition
+1B-VAV2 1B-VAV2-VAVActuatorPosition 1B-VAV2-VAVActuatorPosition",True,0,"           datetime  1A-VAV1-VAVActuatorPosition  1A-VAV2-VAVActuatorPosition  1A-VAV3-VAVActuatorPosition  1B-VAV1-VAVActuatorPosition  1B-VAV2-VAVActuatorPosition  1B-VAV3-VAVActuatorPosition
+2021-08-14 23:45:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:00:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:15:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:30:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:45:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN",,3676,4927,1251,0.037145,True,1,0.291316548983256,correct
+How frequently do the VAV dampers reach their fully open or fully closed positions?,[],"SELECT ?vav ?damper_pos ?ts WHERE {
+    ?vav rdf:type brick:VAV .
+    ?damper_pos brick:isPointOf ?vav .
+    ?damper_pos rdf:type brick:Damper_Position_Sensor .
+    ?damper_pos ref:TimeseriesReference ?ts .
+}","    vav                  damper_pos                          ts
+1A-VAV1 1A-VAV1-VAVActuatorPosition 1A-VAV1-VAVActuatorPosition
+1A-VAV2 1A-VAV2-VAVActuatorPosition 1A-VAV2-VAVActuatorPosition
+1A-VAV3 1A-VAV3-VAVActuatorPosition 1A-VAV3-VAVActuatorPosition
+1B-VAV1 1B-VAV1-VAVActuatorPosition 1B-VAV1-VAVActuatorPosition
+1B-VAV2 1B-VAV2-VAVActuatorPosition 1B-VAV2-VAVActuatorPosition",True,0,"           datetime  1A-VAV1-VAVActuatorPosition     vav  1A-VAV2-VAVActuatorPosition  1A-VAV3-VAVActuatorPosition  1B-VAV1-VAVActuatorPosition  1B-VAV2-VAVActuatorPosition  1B-VAV3-VAVActuatorPosition
+2021-08-14 23:45:00                        33.98 1A-VAV1                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:00:00                        33.98 1A-VAV1                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:15:00                        33.98 1A-VAV1                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:30:00                        33.98 1A-VAV1                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:45:00                        33.98 1A-VAV1                          NaN                          NaN                          NaN                          NaN                          NaN",,2910,4061,1151,0.031815,True,2,0.2515806516011556,correct
+How frequently do the VAV dampers reach their fully open or fully closed positions?,[],"SELECT ?vav ?damper_pos ?ts WHERE {
+    ?vav rdf:type brick:VAV .
+    ?damper_pos brick:isPointOf ?vav .
+    ?damper_pos rdf:type brick:Damper_Position_Sensor .
+    ?damper_pos ref:TimeseriesReference ?ts .
+}","    vav                  damper_pos                          ts
+1A-VAV1 1A-VAV1-VAVActuatorPosition 1A-VAV1-VAVActuatorPosition
+1A-VAV2 1A-VAV2-VAVActuatorPosition 1A-VAV2-VAVActuatorPosition
+1A-VAV3 1A-VAV3-VAVActuatorPosition 1A-VAV3-VAVActuatorPosition
+1B-VAV1 1B-VAV1-VAVActuatorPosition 1B-VAV1-VAVActuatorPosition
+1B-VAV2 1B-VAV2-VAVActuatorPosition 1B-VAV2-VAVActuatorPosition",True,0,"           datetime  1A-VAV1-VAVActuatorPosition  1A-VAV2-VAVActuatorPosition  1A-VAV3-VAVActuatorPosition  1B-VAV1-VAVActuatorPosition  1B-VAV2-VAVActuatorPosition  1B-VAV3-VAVActuatorPosition
+2021-08-14 23:45:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:00:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:15:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:30:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:45:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN",,2221,3098,877,0.02426,True,3,0.2396007458368937,correct
+How frequently do the VAV dampers reach their fully open or fully closed positions?,[],"SELECT ?vav ?damper ?ts WHERE {
+    ?vav rdf:type brick:VAV .
+    ?damper brick:isPointOf ?vav .
+    ?damper rdf:type brick:Damper_Position_Sensor .
+    ?damper ref:TimeseriesReference ?ts .
+}","    vav                      damper                          ts
+1A-VAV1 1A-VAV1-VAVActuatorPosition 1A-VAV1-VAVActuatorPosition
+1A-VAV2 1A-VAV2-VAVActuatorPosition 1A-VAV2-VAVActuatorPosition
+1A-VAV3 1A-VAV3-VAVActuatorPosition 1A-VAV3-VAVActuatorPosition
+1B-VAV1 1B-VAV1-VAVActuatorPosition 1B-VAV1-VAVActuatorPosition
+1B-VAV2 1B-VAV2-VAVActuatorPosition 1B-VAV2-VAVActuatorPosition",True,0,"           datetime  1A-VAV1-VAVActuatorPosition  1A-VAV2-VAVActuatorPosition  1A-VAV3-VAVActuatorPosition  1B-VAV1-VAVActuatorPosition  1B-VAV2-VAVActuatorPosition  1B-VAV3-VAVActuatorPosition
+2021-08-14 23:45:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:00:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:15:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:30:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN
+2021-08-15 00:45:00                        33.98                          NaN                          NaN                          NaN                          NaN                          NaN",,4010,5656,1646,0.04474,True,4,0.3378438194592794,correct
+What is the range of values for the supply air flow rate this past week?,[],"SELECT ?sup ?ts WHERE {
+    ?sup rdf:type brick:Supply_Air_Flow_Sensor .
+    ?sup ref:TimeseriesReference ?ts .
+}","      sup        ts
+1A-ASAM-1 1A-ASAM-1
+1B-ASAM-1 1B-ASAM-1",True,0,"           datetime  1A-ASAM-1  1B-ASAM-1
+2021-08-14 23:45:00        NaN        NaN
+2021-08-15 00:00:00 416.876667        NaN
+2021-08-15 00:15:00 418.319333        NaN
+2021-08-15 00:30:00 418.703333        NaN
+2021-08-15 00:45:00 418.808000        NaN",,1965,2716,751,0.02109,True,0,0.2222543001174926,correct
+What is the range of values for the supply air flow rate this past week?,[],"PREFIX brick: <https://brickschema.org/schema/Brick#>
+SELECT ?sup ?ts WHERE {
+    ?sup rdf:type brick:Supply_Air_Flow_Sensor .
+    ?sup ref:TimeseriesReference ?ts .
+}","      sup        ts
+1A-ASAM-1 1A-ASAM-1
+1B-ASAM-1 1B-ASAM-1",True,0,"           datetime  1A-ASAM-1  1B-ASAM-1
+2021-08-14 23:45:00        NaN        NaN
+2021-08-15 00:00:00 416.876667        NaN
+2021-08-15 00:15:00 418.319333        NaN
+2021-08-15 00:30:00 418.703333        NaN
+2021-08-15 00:45:00 418.808000        NaN",,1965,2886,921,0.02364,True,1,0.2370524009068807,correct
+What is the range of values for the supply air flow rate this past week?,[],"PREFIX brick: <https://brickschema.org/schema/Brick#>
+SELECT ?sup ?ts WHERE {
+    ?sup rdf:type brick:Supply_Air_Flow_Sensor .
+    ?sup ref:TimeseriesReference ?ts .
+}","      sup        ts
+1A-ASAM-1 1A-ASAM-1
+1B-ASAM-1 1B-ASAM-1",True,0,"           datetime  1A-ASAM-1  1B-ASAM-1
+2021-08-14 23:45:00        NaN        NaN
+2021-08-15 00:00:00 416.876667        NaN
+2021-08-15 00:15:00 418.319333        NaN
+2021-08-15 00:30:00 418.703333        NaN
+2021-08-15 00:45:00 418.808000        NaN",,1965,2882,917,0.02358,True,2,0.2368473132451375,correct
+What is the range of values for the supply air flow rate this past week?,[],"SELECT ?sup ?ts WHERE {
+    ?sup rdf:type brick:Supply_Air_Flow_Sensor .
+    ?sup ref:TimeseriesReference ?ts .
+}","      sup        ts
+1A-ASAM-1 1A-ASAM-1
+1B-ASAM-1 1B-ASAM-1",True,0,"           datetime  1A-ASAM-1  1B-ASAM-1
+2021-08-14 23:45:00        NaN        NaN
+2021-08-15 00:00:00 416.876667        NaN
+2021-08-15 00:15:00 418.319333        NaN
+2021-08-15 00:30:00 418.703333        NaN
+2021-08-15 00:45:00 418.808000        NaN",,1965,2875,910,0.023475,True,3,0.338602081934611,correct
+What is the range of values for the supply air flow rate this past week?,[],"SELECT ?sup ?ts WHERE {
+    ?sup rdf:type brick:Supply_Air_Flow_Sensor .
+    ?sup ref:TimeseriesReference ?ts .
+}","      sup        ts
+1A-ASAM-1 1A-ASAM-1
+1B-ASAM-1 1B-ASAM-1",True,0,"           datetime  1A-ASAM-1  1B-ASAM-1
+2021-08-14 23:45:00        NaN        NaN
+2021-08-15 00:00:00 416.876667        NaN
+2021-08-15 00:15:00 418.319333        NaN
+2021-08-15 00:30:00 418.703333        NaN
+2021-08-15 00:45:00 418.808000        NaN",,1965,2839,874,0.0229349999999999,True,4,0.2128515005111694,correct
+Are there any significant drops in airflow that could indicate potential blockages?,[],"SELECT ?ahu ?sup ?ts WHERE {
+    ?ahu rdf:type brick:Air_Handling_Unit .
+    ?sup brick:isPartOf ?ahu. 
+    ?sup ref:TimeseriesReference ?ts.
+    ?sup rdf:type brick:Supply_Air_Flow_Sensor .
+    }","   ahu       sup        ts
+1A-AHU 1A-ASAM-1 1A-ASAM-1
+1B-AHU 1B-ASAM-1 1B-ASAM-1",True,0,"           datetime  1A-ASAM-1  1B-ASAM-1
+2021-08-14 23:45:00        NaN        NaN
+2021-08-15 00:00:00 416.876667        NaN
+2021-08-15 00:15:00 418.319333        NaN
+2021-08-15 00:30:00 418.703333        NaN
+2021-08-15 00:45:00 418.808000        NaN",,3657,5286,1629,0.04272,True,0,0.3372432510058085,"code fail. def computation_data(ts_df):     # Convert the datetime column to datetime objects     ts_df['datetime'] = pd.to_datetime(ts_df['datetime'])          # Set the datetime column as the index     ts_df.set_index('datetime', inplace=True)          # Calculate the difference between consecutive values to find drops     ts_df['1A-ASAM-1_diff'] = ts_df['1A-ASAM-1'].diff()     ts_df['1B-ASAM-1_diff'] = ts_df['1B-ASAM-1'].diff()          # Define a threshold for significant drops (e.g., more than 10% drop)     threshold_1A = ts_df['1A-ASAM-1'].mean() * 0.1     threshold_1B = ts_df['1B-ASAM-1'].mean() * 0.1          # Find significant drops     significant_drops_1A = ts_df[ts_df['1A-ASAM-1_diff'] < -threshold_1A]     significant_drops_1B = ts_df[ts_df['1B-ASAM-1_diff'] < -threshold_1B]          # Print the results     print('Significant drops in 1A-ASAM-1 airflow:')     print(significant_drops_1A[['1A-ASAM-1', '1A-ASAM-1_diff']])     print('\nSignificant drops in 1B-ASAM-1 airflow:')     print(significant_drops_1B[['1B-ASAM-1', '1B-ASAM-1_diff']]) 'datetime' Code failed. Retrying. Iteration 3"
+Are there any significant drops in airflow that could indicate potential blockages?,[],SELECT ?ahu ?sup ?ts WHERE { ?ahu rdf:type brick:Air_Handling_Unit . ?sup brick:isPartOf ?ahu. ?sup ref:TimeseriesReference ?ts. ?sup rdf:type brick:Supply_Air_Flow_Sensor . },"   ahu       sup        ts
+1A-AHU 1A-ASAM-1 1A-ASAM-1
+1B-AHU 1B-ASAM-1 1B-ASAM-1",True,0,"           datetime  1A-ASAM-1  1B-ASAM-1
+2021-08-14 23:45:00        NaN        NaN
+2021-08-15 00:00:00 416.876667        NaN
+2021-08-15 00:15:00 418.319333        NaN
+2021-08-15 00:30:00 418.703333        NaN
+2021-08-15 00:45:00 418.808000        NaN",,4014,5617,1603,0.0441149999999999,True,1,0.3896056811014811,"code fail def computation_data(ts_df):     # Convert the datetime column to datetime objects     ts_df['datetime'] = pd.to_datetime(ts_df['datetime'])     ts_df.set_index('datetime', inplace=True)      # Calculate the difference between consecutive readings     diff_1A = ts_df['1A-ASAM-1'].diff()     diff_1B = ts_df['1B-ASAM-1'].diff()      # Define a threshold for significant drops (e.g., more than 10% drop)     threshold_1A = ts_df['1A-ASAM-1'].mean() * -0.1     threshold_1B = ts_df['1B-ASAM-1'].mean() * -0.1      # Identify significant drops     significant_drops_1A = diff_1A[diff_1A < threshold_1A]     significant_drops_1B = diff_1B[diff_1B < threshold_1B]      # Print the results     print(""Significant drops in 1A-ASAM-1 airflow:"")     print(significant_drops_1A.dropna())     print(""\nSignificant drops in 1B-ASAM-1 airflow:"") ...     print(""\nSignificant drops in 1B-ASAM-1 airflow:"")     print(significant_drops_1B.dropna()) 'datetime' Code failed. Retrying. Iteration 3"
+Are there any significant drops in airflow that could indicate potential blockages?,[],"SELECT ?sensor ?ts WHERE {
+    ?sensor rdf:type brick:Air_Flow_Sensor .
+    ?sensor ref:TimeseriesReference ?ts .
+}","Empty DataFrame
+Columns: [sensor, ts]
+Index: []",True,0,"Empty DataFrame
+Columns: []
+Index: []",,3272,4662,1390,0.0372099999999999,True,2,0.3401348193486531,query fail. 
+Are there any significant drops in airflow that could indicate potential blockages?,[],SELECT ?ahu ?sup ?ts WHERE { ?ahu rdf:type brick:Air_Handling_Unit . ?sup brick:isPartOf ?ahu. ?sup ref:TimeseriesReference ?ts. ?sup rdf:type brick:Supply_Air_Flow_Sensor . },"   ahu       sup        ts
+1A-AHU 1A-ASAM-1 1A-ASAM-1
+1B-AHU 1B-ASAM-1 1B-ASAM-1",True,0,"           datetime  1A-ASAM-1  1B-ASAM-1
+2021-08-14 23:45:00        NaN        NaN
+2021-08-15 00:00:00 416.876667        NaN
+2021-08-15 00:15:00 418.319333        NaN
+2021-08-15 00:30:00 418.703333        NaN
+2021-08-15 00:45:00 418.808000        NaN",,3411,4865,1454,0.038865,True,3,0.3339221795399983,"code fail. def computation_data(ts_df):     # Convert the datetime column to datetime objects     ts_df['datetime'] = pd.to_datetime(ts_df['datetime'])     ts_df.set_index('datetime', inplace=True)      # Calculate the difference between consecutive readings     diff_1A = ts_df['1A-ASAM-1'].diff()     diff_1B = ts_df['1B-ASAM-1'].diff()      # Define a threshold for significant drops (e.g., a drop of more than 50 units)     threshold = -50      # Find significant drops     significant_drops_1A = diff_1A[diff_1A < threshold]     significant_drops_1B = diff_1B[diff_1B < threshold]      # Print the results     print('Significant drops in 1A-ASAM-1 airflow:')     print(significant_drops_1A)     print('\nSignificant drops in 1B-ASAM-1 airflow:')     print(significant_drops_1B) ...     print('\nSignificant drops in 1B-ASAM-1 airflow:')     print(significant_drops_1B) 'datetime'"
+Are there any significant drops in airflow that could indicate potential blockages?,[],"SELECT ?sensor ?ts WHERE {
+    ?sensor rdf:type brick:Air_Flow_Sensor .
+    ?sensor ref:TimeseriesReference ?ts .
+}","Empty DataFrame
+Columns: [sensor, ts]
+Index: []",True,0,"Empty DataFrame
+Columns: []
+Index: []",,3278,4607,1329,0.036325,True,4,0.3313346187273661,query fail. 
+Are there any significant drops in airflow that could indicate potential blockages?,[],"SELECT ?ahu ?sup ?ts WHERE {
+    ?ahu rdf:type brick:Air_Handling_Unit .
+    ?sup brick:isPartOf ?ahu. 
+    ?sup ref:TimeseriesReference ?ts.
+    ?sup rdf:type brick:Supply_Air_Flow_Sensor .
+    }","   ahu       sup        ts
+1A-AHU 1A-ASAM-1 1A-ASAM-1
+1B-AHU 1B-ASAM-1 1B-ASAM-1",True,0," 1A-ASAM-1  1B-ASAM-1  diff
+       NaN        NaN   NaN
+416.876667        NaN   NaN
+418.319333        NaN   NaN
+418.703333        NaN   NaN
+418.808000        NaN   NaN",,1914,2758,844,0.02223,True,0,0.2626869837443034,correct. 
+Are there any significant drops in airflow that could indicate potential blockages?,[],SELECT ?ahu ?sup ?ts WHERE { ?ahu rdf:type brick:Air_Handling_Unit . ?sup brick:isPartOf ?ahu. ?sup ref:TimeseriesReference ?ts. ?sup rdf:type brick:Supply_Air_Flow_Sensor . },"   ahu       sup        ts
+1A-AHU 1A-ASAM-1 1A-ASAM-1
+1B-AHU 1B-ASAM-1 1B-ASAM-1",True,0," 1A-ASAM-1  1B-ASAM-1
+       NaN        NaN
+416.876667        NaN
+418.319333        NaN
+418.703333        NaN
+418.808000        NaN",,1897,2922,1025,0.02486,True,1,0.23748830159505208,correct. Significant drops in airflow detected:                      1A-ASAM-1  1B-ASAM-1 datetime                                  2021-08-15 06:15:00       True      False 2021-08-15 06:30:00       True      False 2021-08-15 06:45:00       True      False 2021-08-15 07:15:00       True      False 2021-08-15 07:30:00       True      False ...                        ...        ... 2021-09-13 18:30:00      False       True 2021-09-13 18:45:00      False       True 2021-09-13 19:00:00      False       True 2021-09-13 19:15:00      False       True 2021-09-13 19:30:00      False       True
+Are there any significant drops in airflow that could indicate potential blockages?,[],"SELECT ?ahu ?sup ?ts WHERE {
+    ?ahu rdf:type brick:Air_Handling_Unit .
+    ?sup brick:isPartOf ?ahu. 
+    ?sup ref:TimeseriesReference ?ts.
+    ?sup rdf:type brick:Supply_Air_Flow_Sensor .
+}","   ahu       sup        ts
+1A-AHU 1A-ASAM-1 1A-ASAM-1
+1B-AHU 1B-ASAM-1 1B-ASAM-1",True,0," 1A-ASAM-1  1B-ASAM-1  diff
+       NaN        NaN   NaN
+416.876667        NaN   NaN
+418.319333        NaN   NaN
+418.703333        NaN   NaN
+418.808000        NaN   NaN",,1914,2683,769,0.021105,True,2,0.195528781414032,correct. Significant drops in airflow detected at the following times:                       1A-ASAM-1  airflow_diff datetime                                      2021-08-15 06:45:00  550.992667   -111.843333 2021-08-15 08:15:00  896.283333   -196.302667 2021-08-15 08:30:00  793.336000   -102.947333 2021-08-15 09:00:00  633.843333   -186.566000 2021-08-15 09:30:00  451.274000   -192.540000 ...                         ...           ... 2021-09-13 14:15:00  521.523333   -352.689333 2021-09-13 14:30:00  425.166667    -96.356667 2021-09-13 18:30:00  570.092667   -238.544667 2021-09-13 18:45:00  505.677333    -64.415333 2021-09-13 22:00:00  370.660000    -53.856667
+Are there any significant drops in airflow that could indicate potential blockages?,[],"SELECT ?sensor ?ts WHERE {
+    ?sensor rdf:type brick:Air_Flow_Sensor .
+    ?sensor ref:TimeseriesReference ?ts .
+}","Empty DataFrame
+Columns: [sensor, ts]
+Index: []",True,0,"Empty DataFrame
+Columns: []
+Index: []",,3881,5820,1939,0.04849,True,3,0.4067257841428121,query failed
+Are there any significant drops in airflow that could indicate potential blockages?,[],SELECT ?ahu ?sup ?ts WHERE { ?ahu rdf:type brick:Air_Handling_Unit . ?sup brick:isPartOf ?ahu. ?sup ref:TimeseriesReference ?ts. ?sup rdf:type brick:Supply_Air_Flow_Sensor . },"   ahu       sup        ts
+1A-AHU 1A-ASAM-1 1A-ASAM-1
+1B-AHU 1B-ASAM-1 1B-ASAM-1",True,0," 1A-ASAM-1  1B-ASAM-1
+       NaN        NaN
+416.876667        NaN
+418.319333        NaN
+418.703333        NaN
+418.808000        NaN",,3770,5230,1460,0.040749999999999995,True,4,0.3392932891845703,"fail. def computation_data(ts_df):     # Ensure the index is a datetime object     ts_df.index = pd.to_datetime(ts_df.index, errors='coerce')          # Drop rows with NaT in the index     ts_df = ts_df.dropna(subset=[ts_df.index.name])          # Calculate the difference between consecutive values to find drops     diff_df = ts_df.diff()          # Define a threshold for significant drops (e.g., more than 10% drop)     threshold = 0.1          # Find significant drops     significant_drops = (diff_df < -threshold * ts_df.shift(1)).any(axis=1)          # Filter the dataframe to only include significant drops     drops_df = ts_df[significant_drops]          # Print the results     if not drops_df.empty:         print(f""Significant drops in airflow detected at the following times:"")         print(drops_df)     else:         print(""No significant drops in airflow detected."") ['datetime']"

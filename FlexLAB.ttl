@@ -1,0 +1,577 @@
+@prefix FlexLAB: <http://example.com/FlexLAB#> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix ns1: <https://brickschema.org/schema/Brick/ref#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+FlexLAB:1A-ARAM-1 a brick:Return_Air_Flow_Sensor ;
+    brick:isPartOf FlexLAB:1A-AHU ;
+    brick:isPointOf FlexLAB:1A-RADA-1 ;
+    ns1:TimeseriesReference "1A-ARAM-1" .
+
+FlexLAB:1A-ASAM-1 a brick:Supply_Air_Flow_Sensor ;
+    brick:isPartOf FlexLAB:1A-AHU ;
+    ns1:TimeseriesReference "1A-ASAM-1" .
+
+FlexLAB:1A-El-AHU_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A-El-AHU ;
+    ns1:TimeseriesReference "1A-El-AHU" .
+
+FlexLAB:1A-El-CHWP_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A-El-CHWP ;
+    ns1:TimeseriesReference "1A-El-CHWP" .
+
+FlexLAB:1A-El-Exhaust_Fan_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A-El-Exhaust_Fan ;
+    ns1:TimeseriesReference "1A-El-Exhaust Fan" .
+
+FlexLAB:1A-El-HWP_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A-El-HWP ;
+    ns1:TimeseriesReference "1A-El-HWP" .
+
+FlexLAB:1A-El-Meter a brick:Building_Electrical_Meter ;
+    brick:isPartOf FlexLAB:Cell1A ;
+    ns1:TimeseriesReference "1A-El-Meter" .
+
+FlexLAB:1A-Exh_Damper a brick:Exhaust_Damper ;
+    brick:isPartOf FlexLAB:1A-AHU .
+
+FlexLAB:1A-OADA-1-POSN a brick:Damper_Position_Sensor ;
+    brick:isPointOf FlexLAB:1A-OADA-1 ;
+    ns1:TimeseriesReference "1A-OADA-1-POSN" .
+
+FlexLAB:1A-OAT-1 a brick:Outside_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1A-AHU ;
+    ns1:TimeseriesReference "1A-OAT-1" .
+
+FlexLAB:1A-RADA-1-POSN a brick:Damper_Position_Sensor ;
+    brick:isPointOf FlexLAB:1A-RADA-1 ;
+    ns1:TimeseriesReference "1A-RADA-1-POSN" .
+
+FlexLAB:1A-SAT-1 a brick:Supply_Air_Temperature_Sensor ;
+    brick:isPartOf FlexLAB:1A-AHU ;
+    ns1:TimeseriesReference "1A-SAT-1" .
+
+FlexLAB:1A-Th-Chilled_Water_thermal_power_sensor a brick:Thermal_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A-Th-Chilled_Water ;
+    ns1:TimeseriesReference "1A-Th-Chilled Water" .
+
+FlexLAB:1A-VAV1-DischargeAirTemp a brick:Discharge_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV1 ;
+    ns1:TimeseriesReference "1A-VAV1-DischargeAirTemp" .
+
+FlexLAB:1A-VAV1-DischargeAirflow a brick:Discharge_Air_Flow_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV1 ;
+    ns1:TimeseriesReference "1A-VAV1-DischargeAirflow" .
+
+FlexLAB:1A-VAV1-OccupiedCoolingSetpt a brick:Occupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV1 ;
+    ns1:TimeseriesReference "1A-VAV1-OccupiedCoolingSetpt" .
+
+FlexLAB:1A-VAV1-OccupiedHeatingSetpt a brick:Occupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV1 ;
+    ns1:TimeseriesReference "1A-VAV1-OccupiedHeatingSetpt" .
+
+FlexLAB:1A-VAV1-UnoccupiedCoolingSetpt a brick:Unoccupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV1 ;
+    ns1:TimeseriesReference "1A-VAV1-UnoccupiedCoolingSetpt" .
+
+FlexLAB:1A-VAV1-UnoccupiedHeatingSetpt a brick:Unoccupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV1 ;
+    ns1:TimeseriesReference "1A-VAV1-UnoccupiedHeatingSetpt" .
+
+FlexLAB:1A-VAV1-VAVActuatorPosition a brick:Damper_Position_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV1 ;
+    ns1:TimeseriesReference "1A-VAV1-VAVActuatorPosition" .
+
+FlexLAB:1A-VAV1-Zn_Temp a brick:Zone_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV1 ;
+    ns1:TimeseriesReference "1A-VAV1-Zn_Temp" .
+
+FlexLAB:1A-VAV1-humid a brick:Zone_Air_Humidity_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV1 ;
+    ns1:TimeseriesReference "1A-VAV1-humid" .
+
+FlexLAB:1A-VAV2-DischargeAirTemp a brick:Discharge_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV2 ;
+    ns1:TimeseriesReference "1A-VAV2-DischargeAirTemp" .
+
+FlexLAB:1A-VAV2-DischargeAirflow a brick:Discharge_Air_Flow_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV2 ;
+    ns1:TimeseriesReference "1A-VAV2-DischargeAirflow" .
+
+FlexLAB:1A-VAV2-OccupiedCoolingSetpt a brick:Occupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV2 ;
+    ns1:TimeseriesReference "1A-VAV2-OccupiedCoolingSetpt" .
+
+FlexLAB:1A-VAV2-OccupiedHeatingSetpt a brick:Occupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV2 ;
+    ns1:TimeseriesReference "1A-VAV2-OccupiedHeatingSetpt" .
+
+FlexLAB:1A-VAV2-UnoccupiedCoolingSetpt a brick:Unoccupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV2 ;
+    ns1:TimeseriesReference "1A-VAV2-UnoccupiedCoolingSetpt" .
+
+FlexLAB:1A-VAV2-UnoccupiedHeatingSetpt a brick:Unoccupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV2 ;
+    ns1:TimeseriesReference "1A-VAV2-UnoccupiedHeatingSetpt" .
+
+FlexLAB:1A-VAV2-VAVActuatorPosition a brick:Damper_Position_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV2 ;
+    ns1:TimeseriesReference "1A-VAV2-VAVActuatorPosition" .
+
+FlexLAB:1A-VAV2-Zn_Temp a brick:Zone_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV2 ;
+    ns1:TimeseriesReference "1A-VAV2-Zn_Temp" .
+
+FlexLAB:1A-VAV2-humid a brick:Zone_Air_Humidity_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV2 ;
+    ns1:TimeseriesReference "1A-VAV2-humid" .
+
+FlexLAB:1A-VAV3-DischargeAirTemp a brick:Discharge_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV3 ;
+    ns1:TimeseriesReference "1A-VAV3-DischargeAirTemp" .
+
+FlexLAB:1A-VAV3-DischargeAirflow a brick:Discharge_Air_Flow_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV3 ;
+    ns1:TimeseriesReference "1A-VAV3-DischargeAirflow" .
+
+FlexLAB:1A-VAV3-OccupiedCoolingSetpt a brick:Occupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV3 ;
+    ns1:TimeseriesReference "1A-VAV3-OccupiedCoolingSetpt" .
+
+FlexLAB:1A-VAV3-OccupiedHeatingSetpt a brick:Occupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV3 ;
+    ns1:TimeseriesReference "1A-VAV3-OccupiedHeatingSetpt" .
+
+FlexLAB:1A-VAV3-UnoccupiedCoolingSetpt a brick:Unoccupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV3 ;
+    ns1:TimeseriesReference "1A-VAV3-UnoccupiedCoolingSetpt" .
+
+FlexLAB:1A-VAV3-UnoccupiedHeatingSetpt a brick:Unoccupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1A-VAV3 ;
+    ns1:TimeseriesReference "1A-VAV3-UnoccupiedHeatingSetpt" .
+
+FlexLAB:1A-VAV3-VAVActuatorPosition a brick:Damper_Position_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV3 ;
+    ns1:TimeseriesReference "1A-VAV3-VAVActuatorPosition" .
+
+FlexLAB:1A-VAV3-Zn_Temp a brick:Zone_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV3 ;
+    ns1:TimeseriesReference "1A-VAV3-Zn_Temp" .
+
+FlexLAB:1A-VAV3-humid a brick:Zone_Air_Humidity_Sensor ;
+    brick:isPointOf FlexLAB:1A-VAV3 ;
+    ns1:TimeseriesReference "1A-VAV3-humid" .
+
+FlexLAB:1A_desk1_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk1_light ;
+    ns1:TimeseriesReference "desk1_light_power" .
+
+FlexLAB:1A_desk1_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk1_plugstrip ;
+    ns1:TimeseriesReference "desk1_plug_power" .
+
+FlexLAB:1A_desk2_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk2_light ;
+    ns1:TimeseriesReference "desk2_light_power" .
+
+FlexLAB:1A_desk2_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk2_plugstrip ;
+    ns1:TimeseriesReference "desk2_plug_power" .
+
+FlexLAB:1A_desk3_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk3_light ;
+    ns1:TimeseriesReference "desk3_light_power" .
+
+FlexLAB:1A_desk3_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk3_plugstrip ;
+    ns1:TimeseriesReference "desk3_plug_power" .
+
+FlexLAB:1A_desk4_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk4_light ;
+    ns1:TimeseriesReference "desk4_light_power" .
+
+FlexLAB:1A_desk4_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk4_plugstrip ;
+    ns1:TimeseriesReference "desk4_plug_power" .
+
+FlexLAB:1A_desk5_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk5_light ;
+    ns1:TimeseriesReference "desk5_light_power" .
+
+FlexLAB:1A_desk5_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk5_plugstrip ;
+    ns1:TimeseriesReference "desk5_plug_power" .
+
+FlexLAB:1A_desk6_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk6_light ;
+    ns1:TimeseriesReference "desk6_light_power" .
+
+FlexLAB:1A_desk6_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1A_desk6_plugstrip ;
+    ns1:TimeseriesReference "desk6_plug_power" .
+
+FlexLAB:1B-ARAM-1 a brick:Return_Air_Flow_Sensor ;
+    brick:isPartOf FlexLAB:1B-AHU ;
+    brick:isPointOf FlexLAB:1B-RADA-1 ;
+    ns1:TimeseriesReference "1B-ARAM-1" .
+
+FlexLAB:1B-ASAM-1 a brick:Supply_Air_Flow_Sensor ;
+    brick:isPartOf FlexLAB:1B-AHU ;
+    ns1:TimeseriesReference "1B-ASAM-1" .
+
+FlexLAB:1B-El-AHU_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B-El-AHU ;
+    ns1:TimeseriesReference "1B-El-AHU" .
+
+FlexLAB:1B-El-CHWP_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B-El-CHWP ;
+    ns1:TimeseriesReference "1B-El-CHWP" .
+
+FlexLAB:1B-El-Exhaust_Fan_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B-El-Exhaust_Fan ;
+    ns1:TimeseriesReference "1B-El-Exhaust Fan" .
+
+FlexLAB:1B-El-HWP_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B-El-HWP ;
+    ns1:TimeseriesReference "1B-El-HWP" .
+
+FlexLAB:1B-El-Meter a brick:Building_Electrical_Meter ;
+    brick:isPartOf FlexLAB:Cell1B ;
+    ns1:TimeseriesReference "1B-El-Meter" .
+
+FlexLAB:1B-Exh_Damper a brick:Exhaust_Damper ;
+    brick:isPartOf FlexLAB:1B-AHU .
+
+FlexLAB:1B-OADA-1-POSN a brick:Damper_Position_Sensor ;
+    brick:isPointOf FlexLAB:1B-OADA-1 ;
+    ns1:TimeseriesReference "1B-OADA-1-POSN" .
+
+FlexLAB:1B-OAT-1 a brick:Outside_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1B-AHU ;
+    ns1:TimeseriesReference "1B-OAT-1" .
+
+FlexLAB:1B-RADA-1-POSN a brick:Damper_Position_Sensor ;
+    brick:isPointOf FlexLAB:1B-RADA-1 ;
+    ns1:TimeseriesReference "1B-RADA-1-POSN" .
+
+FlexLAB:1B-SAT-1 a brick:Supply_Air_Temperature_Sensor ;
+    brick:isPartOf FlexLAB:1B-AHU ;
+    ns1:TimeseriesReference "1B-SAT-1" .
+
+FlexLAB:1B-Th-Chilled_Water_thermal_power_sensor a brick:Thermal_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B-Th-Chilled_Water ;
+    ns1:TimeseriesReference "1B-Th-Chilled Water" .
+
+FlexLAB:1B-VAV1-DischargeAirTemp a brick:Discharge_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV1 ;
+    ns1:TimeseriesReference "1B-VAV1-DischargeAirTemp" .
+
+FlexLAB:1B-VAV1-DischargeAirflow a brick:Discharge_Air_Flow_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV1 ;
+    ns1:TimeseriesReference "1B-VAV1-DischargeAirflow" .
+
+FlexLAB:1B-VAV1-OccupiedCoolingSetpt a brick:Occupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV1 ;
+    ns1:TimeseriesReference "1B-VAV1-OccupiedCoolingSetpt" .
+
+FlexLAB:1B-VAV1-OccupiedHeatingSetpt a brick:Occupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV1 ;
+    ns1:TimeseriesReference "1B-VAV1-OccupiedHeatingSetpt" .
+
+FlexLAB:1B-VAV1-UnoccupiedCoolingSetpt a brick:Unoccupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV1 ;
+    ns1:TimeseriesReference "1B-VAV1-UnoccupiedCoolingSetpt" .
+
+FlexLAB:1B-VAV1-UnoccupiedHeatingSetpt a brick:Unoccupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV1 ;
+    ns1:TimeseriesReference "1B-VAV1-UnoccupiedHeatingSetpt" .
+
+FlexLAB:1B-VAV1-VAVActuatorPosition a brick:Damper_Position_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV1 ;
+    ns1:TimeseriesReference "1B-VAV1-VAVActuatorPosition" .
+
+FlexLAB:1B-VAV1-Zn_Temp a brick:Zone_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV1 ;
+    ns1:TimeseriesReference "1B-VAV1-Zn_Temp" .
+
+FlexLAB:1B-VAV1-humid a brick:Zone_Air_Humidity_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV1 ;
+    ns1:TimeseriesReference "1B-VAV1-humid" .
+
+FlexLAB:1B-VAV2-DischargeAirTemp a brick:Discharge_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV2 ;
+    ns1:TimeseriesReference "1B-VAV2-DischargeAirTemp" .
+
+FlexLAB:1B-VAV2-DischargeAirflow a brick:Discharge_Air_Flow_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV2 ;
+    ns1:TimeseriesReference "1B-VAV2-DischargeAirflow" .
+
+FlexLAB:1B-VAV2-OccupiedCoolingSetpt a brick:Occupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV2 ;
+    ns1:TimeseriesReference "1B-VAV2-OccupiedCoolingSetpt" .
+
+FlexLAB:1B-VAV2-OccupiedHeatingSetpt a brick:Occupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV2 ;
+    ns1:TimeseriesReference "1B-VAV2-OccupiedHeatingSetpt" .
+
+FlexLAB:1B-VAV2-UnoccupiedCoolingSetpt a brick:Unoccupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV2 ;
+    ns1:TimeseriesReference "1B-VAV2-UnoccupiedCoolingSetpt" .
+
+FlexLAB:1B-VAV2-UnoccupiedHeatingSetpt a brick:Unoccupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV2 ;
+    ns1:TimeseriesReference "1B-VAV2-UnoccupiedHeatingSetpt" .
+
+FlexLAB:1B-VAV2-VAVActuatorPosition a brick:Damper_Position_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV2 ;
+    ns1:TimeseriesReference "1B-VAV2-VAVActuatorPosition" .
+
+FlexLAB:1B-VAV2-Zn_Temp a brick:Zone_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV2 ;
+    ns1:TimeseriesReference "1B-VAV2-Zn_Temp" .
+
+FlexLAB:1B-VAV2-humid a brick:Zone_Air_Humidity_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV2 ;
+    ns1:TimeseriesReference "1B-VAV2-humid" .
+
+FlexLAB:1B-VAV3-DischargeAirTemp a brick:Discharge_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV3 ;
+    ns1:TimeseriesReference "1B-VAV3-DischargeAirTemp" .
+
+FlexLAB:1B-VAV3-DischargeAirflow a brick:Discharge_Air_Flow_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV3 ;
+    ns1:TimeseriesReference "1B-VAV3-DischargeAirflow" .
+
+FlexLAB:1B-VAV3-OccupiedCoolingSetpt a brick:Occupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV3 ;
+    ns1:TimeseriesReference "1B-VAV3-OccupiedCoolingSetpt" .
+
+FlexLAB:1B-VAV3-OccupiedHeatingSetpt a brick:Occupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV3 ;
+    ns1:TimeseriesReference "1B-VAV3-OccupiedHeatingSetpt" .
+
+FlexLAB:1B-VAV3-UnoccupiedCoolingSetpt a brick:Unoccupied_Cooling_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV3 ;
+    ns1:TimeseriesReference "1B-VAV3-UnoccupiedCoolingSetpt" .
+
+FlexLAB:1B-VAV3-UnoccupiedHeatingSetpt a brick:Unoccupied_Heating_Temperature_Setpoint ;
+    brick:isPointOf FlexLAB:1B-VAV3 ;
+    ns1:TimeseriesReference "1B-VAV3-UnoccupiedHeatingSetpt" .
+
+FlexLAB:1B-VAV3-VAVActuatorPosition a brick:Damper_Position_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV3 ;
+    ns1:TimeseriesReference "1B-VAV3-VAVActuatorPosition" .
+
+FlexLAB:1B-VAV3-Zn_Temp a brick:Zone_Air_Temperature_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV3 ;
+    ns1:TimeseriesReference "1B-VAV3-Zn_Temp" .
+
+FlexLAB:1B-VAV3-humid a brick:Zone_Air_Humidity_Sensor ;
+    brick:isPointOf FlexLAB:1B-VAV3 ;
+    ns1:TimeseriesReference "1B-VAV3-humid" .
+
+FlexLAB:1B_desk1_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk1_light ;
+    ns1:TimeseriesReference "desk1_light_power" .
+
+FlexLAB:1B_desk1_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk1_plugstrip ;
+    ns1:TimeseriesReference "desk1_plug_power" .
+
+FlexLAB:1B_desk2_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk2_light ;
+    ns1:TimeseriesReference "desk2_light_power" .
+
+FlexLAB:1B_desk2_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk2_plugstrip ;
+    ns1:TimeseriesReference "desk2_plug_power" .
+
+FlexLAB:1B_desk3_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk3_light ;
+    ns1:TimeseriesReference "desk3_light_power" .
+
+FlexLAB:1B_desk3_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk3_plugstrip ;
+    ns1:TimeseriesReference "desk3_plug_power" .
+
+FlexLAB:1B_desk4_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk4_light ;
+    ns1:TimeseriesReference "desk4_light_power" .
+
+FlexLAB:1B_desk4_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk4_plugstrip ;
+    ns1:TimeseriesReference "desk4_plug_power" .
+
+FlexLAB:1B_desk5_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk5_light ;
+    ns1:TimeseriesReference "desk5_light_power" .
+
+FlexLAB:1B_desk5_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk5_plugstrip ;
+    ns1:TimeseriesReference "desk5_plug_power" .
+
+FlexLAB:1B_desk6_light_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk6_light ;
+    ns1:TimeseriesReference "desk6_light_power" .
+
+FlexLAB:1B_desk6_plug_power_sensor a brick:Electric_Power_Sensor ;
+    brick:isPointOf FlexLAB:1B_desk6_plugstrip ;
+    ns1:TimeseriesReference "desk6_plug_power" .
+
+FlexLAB:1A-El-AHU brick:isPartOf FlexLAB:1A-AHU,
+        FlexLAB:Cell1A .
+
+FlexLAB:1A-El-CHWP brick:isPartOf FlexLAB:1A-AHU,
+        FlexLAB:Cell1A .
+
+FlexLAB:1A-El-Exhaust_Fan brick:isPartOf FlexLAB:1A-AHU,
+        FlexLAB:Cell1A .
+
+FlexLAB:1A-El-HWP brick:isPartOf FlexLAB:1A-AHU,
+        FlexLAB:Cell1A .
+
+FlexLAB:1A-OADA-1 a brick:Outside_Damper ;
+    brick:isPartOf FlexLAB:1A-AHU .
+
+FlexLAB:1A-Th-Chilled_Water a brick:Chilled_Water_System ;
+    brick:isPartOf FlexLAB:1A-AHU,
+        FlexLAB:Cell1A .
+
+FlexLAB:1A_desk1_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk1_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk2_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk2_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk3_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk3_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk4_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk4_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk5_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk5_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk6_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1A_desk6_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1B-El-AHU brick:isPartOf FlexLAB:1B-AHU,
+        FlexLAB:Cell1B .
+
+FlexLAB:1B-El-CHWP brick:isPartOf FlexLAB:1B-AHU,
+        FlexLAB:Cell1B .
+
+FlexLAB:1B-El-Exhaust_Fan brick:isPartOf FlexLAB:1B-AHU,
+        FlexLAB:Cell1B .
+
+FlexLAB:1B-El-HWP brick:isPartOf FlexLAB:1B-AHU,
+        FlexLAB:Cell1B .
+
+FlexLAB:1B-OADA-1 a brick:Outside_Damper ;
+    brick:isPartOf FlexLAB:1B-AHU .
+
+FlexLAB:1B-Th-Chilled_Water a brick:Chilled_Water_System ;
+    brick:isPartOf FlexLAB:1B-AHU,
+        FlexLAB:Cell1B .
+
+FlexLAB:1B_desk1_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk1_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk2_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk2_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk3_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk3_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk4_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk4_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk5_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk5_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk6_light a brick:Light ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1B_desk6_plugstrip a brick:PlugStrip ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:1A-RADA-1 a brick:Return_Damper ;
+    brick:isPartOf FlexLAB:1A-AHU .
+
+FlexLAB:1B-RADA-1 a brick:Return_Damper ;
+    brick:isPartOf FlexLAB:1B-AHU .
+
+FlexLAB:1A-VAV1 a brick:VAV ;
+    rdfs:label "north zone Variable Air Volume Unit" ;
+    brick:isPartOf FlexLAB:1A-AHU .
+
+FlexLAB:1A-VAV2 a brick:VAV ;
+    rdfs:label "core zone Variable Air Volume Unit" ;
+    brick:isPartOf FlexLAB:1A-AHU .
+
+FlexLAB:1A-VAV3 a brick:VAV ;
+    rdfs:label "south zone Variable Air Volume Unit" ;
+    brick:isPartOf FlexLAB:1A-AHU .
+
+FlexLAB:1B-VAV1 a brick:VAV ;
+    rdfs:label "north zone Variable Air Volume Unit" ;
+    brick:isPartOf FlexLAB:1B-AHU .
+
+FlexLAB:1B-VAV2 a brick:VAV ;
+    rdfs:label "core zone Variable Air Volume Unit" ;
+    brick:isPartOf FlexLAB:1B-AHU .
+
+FlexLAB:1B-VAV3 a brick:VAV ;
+    rdfs:label "south zone Variable Air Volume Unit" ;
+    brick:isPartOf FlexLAB:1B-AHU .
+
+FlexLAB:1A-AHU a brick:Air_Handling_Unit ;
+    brick:isPartOf FlexLAB:Cell1A .
+
+FlexLAB:1B-AHU a brick:Air_Handling_Unit ;
+    brick:isPartOf FlexLAB:Cell1B .
+
+FlexLAB:Cell1A a brick:Building ;
+    rdfs:label "Cell 1A" ;
+    brick:isPartOf FlexLAB:FlexLAB ;
+    ns1:TimeseriesReference "Cell1A.csv" .
+
+FlexLAB:Cell1B a brick:Building ;
+    rdfs:label "Cell 1B" ;
+    brick:isPartOf FlexLAB:FlexLAB ;
+    ns1:TimeseriesReference "Cell1B.csv" .
+
